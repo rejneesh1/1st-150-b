@@ -1,0 +1,8 @@
+<script>
+	function Sentence(input_str) {
+    var first_char = input_str[0];
+    var last_char = input_str[input_str.length - 1];
+    return /[A-Z]/.test(first_char) && last_char == ".";
+}
+alert(Sentence("Good morming everyone."));
+</script>

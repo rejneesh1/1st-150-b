@@ -1,0 +1,16 @@
+<script>
+	function find_rightmost_round_number(input_arr) {
+
+  var result = 0;
+  for (var i = 0; i < input_arr.length; i++)
+  {
+    if (input_arr[i] % 10 === 0) {
+      result = i;
+    }
+  }
+
+  return result;
+}
+
+alert(find_rightmost_round_number([1, 22, 30, 54, 56]));
+</script>

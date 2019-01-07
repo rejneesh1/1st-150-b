@@ -1,0 +1,10 @@
+<script>
+	function is_permu(input_arr, n) {
+    for (var i = 0; i < n; i++) {
+        if (input_arr.indexOf(i + 1) < 0) 
+          return false;
+    }
+    return true;
+}
+alert(is_permu([1, 2, 3, 4, 5], 5));
+</script>

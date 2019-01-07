@@ -1,0 +1,16 @@
+<script>
+	function longest(arra)
+  {
+    var max_str = arra[0].length;
+    var ans = arra[0];
+    for (var i = 1; i < arra.length; i++) {
+        var maxi = arra[i].length;
+        if (maxi > max_str) {
+            ans = arra[i];
+            max_str = maxi;
+        }
+    }
+    return ans;
+}
+alert(longest(["ab", "a", "abcd"]));
+</script>
